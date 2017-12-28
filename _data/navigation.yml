@@ -1,0 +1,19 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Posts
+  url: /posts/
+
+- title: Quick Hits
+  url: /quick/
+
+- title: Tools
+  url: /Pages/Tools/index.html
+
+- title: PowerShell Resources
+  url: /Pages/PowerShellResources/index.html
+
+- title: Legacy Posts
+  url: /Pages/LegacyWordpressPosts/index.html
