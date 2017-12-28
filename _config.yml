@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Rambling Cookie Monster
+title:            Chirishman PowerShell
 locale:           en_US
-url:              http://ramblingcookiemonster.github.io
+url:              http://blog.chiriserv.org
 
 # Jekyll configuration
 
@@ -25,41 +25,28 @@ kramdown:
 
 # Site owner
 owner:
-  name: Warren F
+  name: Chirishman
   avatar: bio.png
-  bio: "Systems Engineer with a penchant for PowerShell, science, cooking, information security, family, cookies, and the Oxford comma."
+  bio: "Sysadmin with an interest in PowerShell, automation, SBCs, and Datavis."
   email:
-  disqus-shortname: ramblingcookiemonster
-  twitter: pscookiemonster
-  google:
-    analytics: UA-61008962-1
+  #disqus-shortname: ramblingcookiemonster
+  twitter: the_chirishman
+  #google:
+    #analytics: UA-61008962-1
   bing-verify:
-  github: ramblingcookiemonster
-  stackoverflow: 3067642/cookie-monster
-  linkedin: wframe
-  technet: https://social.technet.microsoft.com/profile/cookie.monster
-  wordpress: https://ramblingcookiemonster.wordpress.com
+  github: chirishman
+  stackoverflow: 3661504/chirishman
+  #linkedin: wframe
+  #technet: https://social.technet.microsoft.com/profile/cookie.monster
+  #wordpress: https://ramblingcookiemonster.wordpress.com
   rss: feed.xml
   #Github repos in sidebar - match them up to the repository name...
   githubrepos: [
-          "AppVReporting",
-          "BuildHelpers",
-          "Citrix.NetScaler",
-          "Git-Presentation",
-          "InfoBlox",
-          "Invoke-Parallel",
-          "PowerShell",
-          "PSDepend",
-          "PSDeploy",
-          "PSDiskPart",
-          "PSExcel",
-          "PSHTMLTable",
-          "PSRabbitMQ",
-          "PSSlack",
-          "PSSQLite",
-          "PSStash",
-          "RabbitMqTools",
-          "SecretServer"]
+          "ADAuth",
+          "Keystore",
+          "PowerArchiver",
+          "Powershell-SlackBot",
+          "StoredPSCredential"]
 
 #UA-61008962-1
 
