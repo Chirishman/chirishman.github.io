@@ -29,7 +29,7 @@ owner:
   avatar: bio.png
   bio: "Sysadmin with an interest in PowerShell, automation, SBCs, and Datavis."
   email:
-  #disqus-shortname: ramblingcookiemonster
+  disqus-shortname: chiriserv
   twitter: the_chirishman
   #google:
     #analytics: UA-61008962-1
