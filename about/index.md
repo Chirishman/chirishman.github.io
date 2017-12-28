@@ -24,3 +24,7 @@ I am a primarily Windows based Sysadmin and automation scripter with a backgroun
 * E-mail: my username at chiriserv.org
 * [Twitter](https://twitter.com/the_chirishman)
 * [GitHub](https://github.com/Chirishman)
+
+### Acknowledgements
+
+This blog was forked from [ramblingcookiemonster](http://ramblingcookiemonster.github.io/)'s powershell blog
