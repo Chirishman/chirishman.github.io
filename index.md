@@ -1,6 +1,6 @@
 ---
 layout: home
-excerpt: "Rambling on about PowerShell"
+excerpt: "Probably Too Much PowerShell"
 tags: [powershell, scripting, automation, microsoft]
 image:
   feature: banner.jpg
