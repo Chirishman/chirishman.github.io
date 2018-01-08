@@ -8,7 +8,7 @@ date: 2017-12-28 15:26:00
 comments: true
 image:
  feature: banner.jpg
- thumb: /HelloWorld/postthumb.png
+ thumb: /postthumbs/2017-12-28-HelloWorld.png
 ---
 {% include _toc.html %}
 
@@ -18,7 +18,7 @@ image:
 
 ## Body
 
-![testimage](/images/HelloWorld/testimage.JPG)
+![testimage](/images/articleresources/2017-12-28-HelloWorld/testimage.JPG)
 
 {% gist 0b2dd9599f8d90aa97881d6cb89548fb %}
 
