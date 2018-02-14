@@ -1,14 +1,17 @@
 ---
 layout: post
-title: "Hello World"
-excerpt: "Excerpt/subheading"
-tags: [PowerShell, HelloWorld]
-modified: 2017-12-28 15:26:00
-date: 2017-12-28 15:26:00
+title: Hello World
+excerpt: Excerpt/subheading
+tags:
+  - PowerShell
+  - HelloWorld
+modified: {}
+date: {}
 comments: true
 image:
- feature: banner.jpg
- thumb: /HelloWorld/postthumb.png
+  feature: banner.jpg
+  thumb: /HelloWorld/postthumb.png
+published: true
 ---
 {% include _toc.html %}
 
@@ -25,6 +28,3 @@ image:
 ```powershell
 Write-Host 'Hello World'
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5MDIyODk3XX0=
--->
