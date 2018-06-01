@@ -24,13 +24,7 @@ published: true
 
 To measure a single command or section of code when developing use `Measure-Command` to quickly get some performance information
 
-```PowerShell
-$PerformanceResults = Measure-Command -Expression {
-    Start-Sleep -Seconds 15
-}
-
-$PerformanceResults
-```
+{% gist 24e802b620f4e6e54e12eeff5ae4969d Measure-Command.ps1 %}
 
 #### Sample Output
 
@@ -50,36 +44,7 @@ $PerformanceResults
 
 To measure specific sections of code in a production script leverage dotnet stopwatch objects which are much more flexible. They can be stopped, started, and cleared at will.
 
-```PowerShell
-Function Test-FunctionPerformance {
-    [CmdletBinding()]
-    Param()
-    $Overall = [system.diagnostics.stopwatch]::startNew()
-    $OddSteps = [system.diagnostics.stopwatch]::startNew()
-    Start-Sleep -Seconds 3
-    $OddSteps.Stop()
-    Write-Verbose -Message "Step 1 Took $($Overall.Elapsed)"
-    
-    $Step2 =  [system.diagnostics.stopwatch]::startNew()
-    Start-Sleep -Seconds 5
-    $Step2.Stop()
-    Write-Verbose -Message "Step 2 Took $($Step2.Elapsed)"
-    
-    $Step3 =  [system.diagnostics.stopwatch]::startNew()
-    $OddSteps.Start()
-    Start-Sleep -Seconds 10
-    $Step3.Stop()
-    $OddSteps.Stop()
-    $Overall.Stop()
-    Write-Verbose -Message "Step 3 Took $($Step3.Elapsed)"
-    
-    Write-Verbose -Message "Odd Numbered Steps Took $($OddSteps.Elapsed)"
-
-    Write-Verbose -Message "Entire Function Took $($Overall.Elapsed)"
-}
-
-Test-FunctionPerformance -Verbose
-```
+{% gist 24e802b620f4e6e54e12eeff5ae4969d Test-FunctionPerformance.ps1 %}
 
 #### Sample Output
 
@@ -93,23 +58,7 @@ Test-FunctionPerformance -Verbose
 
 Stopwatch objects are also especially good for measuring loops
 
-```PowerShell
-$Overall = [system.diagnostics.stopwatch]::startNew()
-$ThisLoop = [system.diagnostics.stopwatch]::New()
-$IndividualLoopPerformance = [System.Collections.ArrayList]::new()
-1..100 | %{
-    $ThisLoop.Restart()
-    Start-Sleep -Milliseconds $_
-    [void]$IndividualLoopPerformance.Add($ThisLoop.Elapsed)
-}
-$ThisLoop.Stop()
-$Overall.Stop()
-
-Write-Verbose -Message "Loop Performance Metrics `r`n$(($IndividualLoopPerformance | measure -Average -Property totalseconds -Maximum -Minimum -Sum | ft ) | out-string)" -Verbose
-
-Write-Verbose -Message "Entire Loop Took $($Overall.Elapsed)" -Verbose
-
-```
+{% gist 24e802b620f4e6e54e12eeff5ae4969d LoopMetrics.ps1 %}
 
 #### Sample Output
 

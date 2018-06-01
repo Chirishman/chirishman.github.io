@@ -23,14 +23,10 @@ published: true
 
 If you don't need a delimiter between the entries
 
-```PowerShell
--join(0,1,2,3,4)
-```
+{% gist c435cbfdcbaa6dadddaa6f020da0e088 ConciseJoin.ps1 %}
 
 If you do need a delimiter (such as a comma) the long way is:
 
-```PowerShell
-@(0,1,2,3,4) -join ','
-```
+{% gist c435cbfdcbaa6dadddaa6f020da0e088 DelimitedJoin.ps1 %}
 
 [More on PowerShell Operators](https://ss64.com/ps/syntax-operators.html)
