@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Concise Joining
-excerpt: To concatenate an array very concisely
-tags:
-  - PowerShell
-  - Joining
-  - CodeGolf
-  - Concatenation
-  - Quick
-modified: {}
+excerpt: "To concatenate an array very concisely"
+tags: [
+    PowerShell,
+    Joining,
+    CodeGolf,
+    Concatenation,
+    Quick
+]  
+modified: {2018-06-01 01:15:00 +0500}
 date: {2018-06-01 01:15:00 +0500}
 comments: true
 image:

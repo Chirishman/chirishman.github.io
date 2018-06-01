@@ -1,15 +1,16 @@
 ---
 layout: post
 title: Code Performance Measurement
-excerpt: To quickly measure snippets or create permanent measurement features in your scripts
-tags:
-  - PowerShell
-  - Performance
-  - Metrics
-  - Loops
-  - DotNet
-  - Quick
-modified: {}
+excerpt: "To quickly measure snippets or create permanent measurement features in your scripts"
+tags: [
+    PowerShell,
+    Performance,
+    Metrics,
+    Loops,
+    DotNet,
+    Quick
+]
+modified: {2018-06-01 01:23:00 +0500}
 date: {2018-06-01 01:23:00 +0500}
 comments: true
 image:

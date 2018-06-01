@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Variable Assignment inside of an Evaluation
-excerpt: Extra Parentheses Save the day
-tags:
-  - PowerShell
-  - VariableAssignment
-  - Loops
-  - Quick
-modified: {}
-date: {2018-06-01 01:20:00 +0500}
+excerpt: "Extra Parentheses Save the day"
+tags: [
+  PowerShell,
+  VariableAssignment,
+  Loops,
+  Quick
+]
+modified: {2018-06-01 01:10:00 +0500}
+date: {2018-06-01 01:10:00 +0500}
 comments: true
 image:
   feature: banner.jpg
