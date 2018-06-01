@@ -36,7 +36,6 @@
   <div id="index">
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
     {% for post in site.posts limit:40 %}
-      <!-- {% unless post.tags contains 'Quick' %} -->
       <div class="article-index-margin">
         <article>
           {% if post.link %}
@@ -50,7 +49,6 @@
           {% endif %}
         </article>
       </div><!-- /#articlediv -->
-      <!-- {% endunless %} -->
     {% endfor %}
   </div><!-- /#index -->
 </div><!-- /#main -->
