@@ -9,8 +9,8 @@ tags: [
     Concatenation,
     Quick
 ]  
-modified: {2018-06-01 01:15:00 +0500}
-date: {2018-06-01 01:15:00 +0500}
+modified: 2018-06-01 01:15:00 +0500
+date: 2018-06-01 01:15:00 +0500
 comments: true
 image:
   feature: banner.jpg
