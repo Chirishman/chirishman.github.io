@@ -8,7 +8,7 @@ tags:
   - Loops
   - Quick
 modified: {}
-date: {}
+date: {2018-06-01 01:20:00 +0500}
 comments: true
 image:
   feature: banner.jpg
