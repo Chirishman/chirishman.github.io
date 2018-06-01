@@ -20,21 +20,10 @@ published: true
 
 ## To evaluate something and also store it in a variable in the most concise way possible
 
-```PowerShell
-if (($a = $true)){
-    #TrueCondition
-}
-```
+{% gist 36646bdc100f2746ef812173cd3bef69  AssignmentInEvaluation.ps1 %}
 
 The extra set of Parentheses causes the statement to return it's value as well as storing it in the variable, in this case `$a`
 
 This is especially useful in `while` loops. The example below is taken from a script which I wrote to listen for a machine to come back from a reboot.
 
-```PowerShell
-while (-not ($ConnectionResults = Test-Connection -ComputerName 'FakeComputerName' -Count 1 -ErrorAction SilentlyContinue)) {
-    Write-Verbose -Message "Still Waiting" -Verbose
-    Start-Sleep -Seconds 30
-}
-
-Write-Information -MessageData (-join("Name Resolves to:`t",$ConnectionResults.IPV4Address)) -InformationAction Continue
-```
+{% gist 36646bdc100f2746ef812173cd3bef69  WhileLoop.ps1 %}
