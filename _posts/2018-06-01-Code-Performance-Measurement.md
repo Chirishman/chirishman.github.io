@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Performance Measurement
+title: "Code Performance Measurement"
 excerpt: "To quickly measure snippets or create permanent measurement features in your scripts"
 tags: [
     PowerShell,

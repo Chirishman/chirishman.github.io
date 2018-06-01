@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Variable Assignment inside of an Evaluation
+title: "Variable Assignment inside of an Evaluation"
 excerpt: "Extra Parentheses Save the day"
 tags: [
   PowerShell,
