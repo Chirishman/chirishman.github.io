@@ -19,6 +19,12 @@ published: false
 ---
 {% include _toc.html %}
 
+## Intro
+
+Today lets talk about calculated properties in PowerShell which can be thought of like computed columns in SQL if you're familiar with that, or like a column made up of equation cells in Excel.
+
+The most comprehensible way I can think of to do this is to work through an example of where this would be useful in a real world scenario and along the way I will touch on various ways to improve the readability and maintainability of your code.
+
 ## Scenario
 
 Take the below scenario in which I am attempting to get the sum and average of the file sizes for all files in `C:\Temp`
@@ -34,7 +40,7 @@ Take the below scenario in which I am attempting to get the sum and average of t
 
 This output is OK but not great. I'd rather have the size in megabytes and trim off any decimal places beyond two. How would I go about this?
 
-One way would be to store the values one at a time in a variable, perform some math on them and then return them. That's OK but it breaks down when you start trying to check for multiple folders one after another and you lose the output format that you're accustomed to.
+One way would be to store the values one at a time in a variable, perform some math on them and then return them. That's OK but it breaks down when you start trying to check for multiple folders one after another and you lose the output format that you're accustomed to. Additionally if you were to add another property to consideration such as **Maximum** it would be complicated to add and would require an another new variable.
 
 The better option is to use some calculated properties. 
 
