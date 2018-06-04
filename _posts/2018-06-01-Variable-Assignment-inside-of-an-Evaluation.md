@@ -6,6 +6,7 @@ tags: [
   PowerShell,
   VariableAssignment,
   Loops,
+  Squeezing,
   Quick
 ]
 modified: 2018-06-01 01:10:00 +0500
@@ -22,7 +23,7 @@ published: true
 
 {% gist 36646bdc100f2746ef812173cd3bef69 AssignmentInEvaluation.ps1 %}
 
-The extra set of Parentheses causes the statement to return it's value as well as storing it in the variable, in this case `$a`
+The extra set of Parentheses causes the statement to return it's value as well as storing it in the variable, in this case `$a`. This is called **variable squeezing**.
 
 This is especially useful in `while` loops. The example below is taken from a script which I wrote to listen for a machine to come back from a reboot.
 
