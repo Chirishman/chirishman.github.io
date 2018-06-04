@@ -21,6 +21,12 @@ published: false
 
 ## Intro
 
+Today lets talk about calculated properties in PowerShell which can be thought of like computed columns in SQL if you're familiar with that, or like a column made up of equation cells in Excel.
+
+The most comprehensible way I can think of to do this is to work through an example of where this would be useful in a real world scenario and along the way I will touch on various ways to improve the readability and maintainability of your code.
+
+## Scenario
+
 Take the below scenario in which I am attempting to get the sum and average of the file sizes for all files in `C:\Temp`
 
 {% gist 567767abc08a8d610f6db44256ee12eb ComputedColumns01.ps1 %}
@@ -34,11 +40,17 @@ Take the below scenario in which I am attempting to get the sum and average of t
 
 This output is OK but not great. I'd rather have the size in megabytes and trim off any decimal places beyond two. How would I go about this?
 
-One way would be to store the values one at a time in a variable, perform some math on them and then return them. That's OK but it breaks down when you start trying to check for multiple folders one after another and you lose the output format that you're accustomed to.
+One way would be to store the values one at a time in a variable, perform some math on them and then return them. That's OK but it breaks down when you start trying to check for multiple folders one after another and you lose the output format that you're accustomed to. Additionally if you were to add another property to consideration such as **Maximum** it would be complicated to add and would require an another new variable.
 
-The better option is to use some calculated properties. First begin by testing explicit selection of the properties you want without modifying them
+The better option is to use some calculated properties. 
+
+## Select Statements
+
+First begin by testing explicit selection of the properties you want without modifying them
 
 {% gist 567767abc08a8d610f6db44256ee12eb ComputedColumns02.ps1 %}
+
+### Calculated Property Basics
 
 Then we will replace one property with a calculated property which will result in an identical output.
 
@@ -47,6 +59,8 @@ This is done by replacing the name-based column selection with a hashtable conta
 Remember that `$_` is how you can easily refer to 'this' or 'this record' in PowerShell and thus how you would refer to the record being processed inside of the expression block. To select a specific property use `$_.DesiredPropertyName`
 
 {% gist 567767abc08a8d610f6db44256ee12eb ComputedColumns03.ps1 %}
+
+### Numerical Conversion
 
 Now that we have our basic column to work from we can begin to do math, dividing the average byte count of the files by one megabyte. PowerShell makes this easy by providing a shorthand allowing you to simply put an integer followed by the two digit abbreviation for the unit in question (e.g. `1kb`, `100mb`, `2gb`, `0.4tb`, `1pb`)
 
@@ -59,7 +73,11 @@ Now that we have our basic column to work from we can begin to do math, dividing
     Minimum  :
     Property : length
 
-That works great, now we need to copy this logic to the Sum column and trim the decimal places from both. The rounding will be done using `[math]::Round($ValueToBeRounded,$NumberOfPlacesToRoundTo)`
+That works great, now we need to copy this logic to the Sum column and trim the decimal places from both.
+
+### Rounding
+
+The rounding will be done using `[math]::Round($ValueToBeRounded,$NumberOfPlacesToRoundTo)`
 
 In this case we'll round to two places.
 
@@ -72,7 +90,11 @@ In this case we'll round to two places.
     Minimum  :
     Property : length
 
-All clean! But maybe we should annotate what unit we're using now though. My preference is to reflect this in the column heading so that I can keep the values clean in case I want to do anything further with them. To do that we just need to modify the **Name** value in the definition of out computed properties.
+All clean! But maybe we should annotate what unit we're using now though.
+
+### Reflecting New Units in Output
+
+My preference is to reflect this in the column heading so that I can keep the values clean in case I want to do anything further with them. To do that we just need to modify the **Name** value in the definition of out computed properties.
 
 {% gist 567767abc08a8d610f6db44256ee12eb ComputedColumns06.ps1 %}
 
@@ -82,6 +104,8 @@ All clean! But maybe we should annotate what unit we're using now though. My pre
     Maximum      :
     Minimum      :
     Property     : length
+
+## Readability Improvements
 
 That pipeline is getting a bit long and messy now though, we should do something to clean that up! Luckily PowerShell select statements, even ones including calculated properties, can be stored in variables as arrays!
 
