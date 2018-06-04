@@ -9,8 +9,8 @@ tags: [
   Squeezing,
   Quick
 ]
-modified: 2018-06-01 01:10:00 +0500
-date: 2018-06-01 01:10:00 +0500
+modified: 2018-06-01 01:10:00
+date: 2018-06-01 01:10:00
 comments: true
 image:
   feature: banner.jpg
