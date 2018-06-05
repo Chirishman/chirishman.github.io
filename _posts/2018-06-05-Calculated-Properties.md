@@ -9,13 +9,13 @@ tags: [
     Pipeline,
     101
 ]
-modified: 2018-06-05 13:50:00
-date: 2018-06-05 13:50:00
+modified: 2018-06-05 12:09:00
+date: 2018-06-05 12:09:00
 comments: true
 image:
   feature: banner.jpg
   thumb: /quicktips/postthumb.png
-published: false
+published: true
 ---
 {% include _toc.html %}
 
