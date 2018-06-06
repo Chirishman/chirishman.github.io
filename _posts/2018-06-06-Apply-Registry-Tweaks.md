@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Apply Registry Tweaks"
-excerpt: "To apply single or bundled registry tweaks using PowerShell"
+excerpt: "Apply single or bundled registry tweaks using PowerShell"
 tags: [
     PowerShell,
     Registry,
