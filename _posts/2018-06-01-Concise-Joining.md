@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Concise Joining"
-excerpt: "To concatenate an array very concisely"
+excerpt: "Concatenate an array very concisely"
 tags: [
     PowerShell,
     Joining,

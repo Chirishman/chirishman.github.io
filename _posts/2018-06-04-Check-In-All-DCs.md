@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Check for Lockouts And Logon Times in all DCs"
-excerpt: "To quickly poll the domain for information without needing to wait for replication"
+excerpt: "Quickly poll the domain for information without needing to wait for replication"
 tags: [
     PowerShell,
     ActiveDirectory,
