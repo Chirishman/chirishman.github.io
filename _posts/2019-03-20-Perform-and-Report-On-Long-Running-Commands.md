@@ -14,7 +14,7 @@ comments: true
 image:
   feature: banner.jpg
   thumb: /quicktips/postthumb.png
-published: true
+published: false
 ---
 {% include _toc.html %}
 
