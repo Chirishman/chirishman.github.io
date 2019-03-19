@@ -30,7 +30,7 @@ I have mostly found myself needing to do this when prepping to install SQL serve
 
 This sets a registry value which allows windows to skip trying to contact the WSUS server.
 
-```powershell
+```PowerShell
 Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU -Name UseWUServer -Value 0
 ```
 
@@ -38,6 +38,6 @@ Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\A
 
 And this reverses the value change to resume directing Windows Update to poll the WSUS server. If you group policy is set to enforce this then you can simply leave this step off if desired as it should be corrected on the next consistency check.
 
-```powershell
+```PowerShell
 Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU -Name UseWUServer -Value 1
 ```

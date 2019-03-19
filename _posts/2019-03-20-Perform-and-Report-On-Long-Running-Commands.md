@@ -28,7 +28,7 @@ Often times, especially when diagnosing something you'll want to let a long runn
 
 Run the command and collect the results in a variable or output it to a file. Here the results of this command are fairly easy to store in a variable, however if you are using things like old command prompt tools or something like a git command you will need to do a little more legwork to capture the results in a usable way. My favorite way to do this is as computed properties in a select statement which I'll be covering in another post.
 
-```powershell
+```PowerShell
 $ScanResult = Repair-Volume -DriveLetter c -Scan
 ```
 
@@ -36,7 +36,7 @@ $ScanResult = Repair-Volume -DriveLetter c -Scan
 
 Make sure to change the **from**, **to**, and **smtpserver** values below to the ones appropriate to your sending/receiving environment.
 
-```powershell
+```PowerShell
 Send-MailMessage -From 'a@b.com' -To 'b@a.com' -Subject 'Scan Results' -Body $ScanResult -SmtpServer 'mail.b.com'
 ```
 

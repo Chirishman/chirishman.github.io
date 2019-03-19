@@ -27,7 +27,7 @@ Here is a self contained snippet of code which I've assembled to easily check wh
 
 ### Initialize a container for the output
 
-```powershell
+```PowerShell
 $RebootCheck = @{}
 ```
 
@@ -41,7 +41,7 @@ $RebootCheck['ComponentBasedServicing'] = $ComponentBasedServicingKeys -Split "\
 
 ### Check for a pending Windows Update reboot
 
-```
+```PowerShell
 $WindowsUpdateKeys = (Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\').Name
 
 $RebootCheck['WindowsUpdate'] = $WindowsUpdateKeys -Split "\\" -contains "RebootRequired"
@@ -49,13 +49,13 @@ $RebootCheck['WindowsUpdate'] = $WindowsUpdateKeys -Split "\\" -contains "Reboot
 
 ### Check for pending file rename
 
-```
+```PowerShell
 $RebootCheck['PendingFileRename'] = (Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\').PendingFileRenameOperations.Length -gt 0
 ```
 
 ### Check for pending Computer Rename
 
-```
+```PowerShell
 $ActiveComputerName = (Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\ComputerName\ActiveComputerName').ComputerName
 $PendingComputerName = (Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName').ComputerName
 $RebootCheck['PendingComputerRename'] = $ActiveComputerName -ne $PendingComputerName
@@ -63,13 +63,13 @@ $RebootCheck['PendingComputerRename'] = $ActiveComputerName -ne $PendingComputer
 
 ### Return Reboot Check Results
 
-```
+```PowerShell
 $RebootCheck
 ```
 
 ## Complete Script
 
-```powershell
+```PowerShell
 $RebootCheck = @{}
 
 $ComponentBasedServicingKeys = (Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\').Name
