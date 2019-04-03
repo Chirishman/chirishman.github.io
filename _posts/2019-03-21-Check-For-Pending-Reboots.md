@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Bypass WSUS"
-excerpt: "Apply A registry tweak to skip WSUS using PowerShell"
+title: "Check for Pending Reboots"
+excerpt: "Use a self contained script to check for pending reboots for any reason"
 tags: [
     PowerShell,
     Registry,
@@ -21,7 +21,7 @@ published: true
 
 ## Intro
 
-Here is a self contained snippet of code which I've assembled to easily check whether a reboot is pending on a given machine for _any_ reason. The list of check locations is based on/captured from xPendingReboot. Full script is at the end.
+Here is a self contained snippet of code which I've assembled to easily check whether a reboot is pending on a given machine for _any_ reason. The list of check locations is based on/captured from the xPendingReboot DSC resource. Full script is at the end.
 
 ## Scripts
 
