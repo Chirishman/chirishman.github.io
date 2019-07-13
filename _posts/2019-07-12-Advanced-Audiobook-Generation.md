@@ -117,9 +117,16 @@ m4b-tool merge --name="Harry Potter and the Chamber of Secrets" --series="Harry 
 
 This is the most time consuming part. Open the merged audio file (Recommended: Use [Audacity](https://www.audacityteam.org) or some other audio editing tool which both shows the timecode down to three decimal places and which lets you visually see the waveform which makes it much easier to find the dead air/quiet spots which are usually the chapter breaks).
 
+[![Identify Chapters](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/identify-chapters_550.png)](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/identify-chapters.png)
+
+
 When selecting the time signature for a chapter marker, wherever possible try to put it at least a few milliseconds and up to maybe half a second into the silence before the reading of the chapter heading begins. Obviously this will vary depending on how generous the chapter pauses are.
 
+[![Scrub for Precise Time Signature](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/scrub-for-precise-time-signature_550.png)](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/scrub-for-precise-time-signature.png)
+
 I find it easiest to keep track of the timecodes and chapters in a spreadsheet as shown below. As you can see I've added an "intro" and "outro" section, these really help listeners to do things like skip back to the start of chapter 1 without having to listen to the "opening credits" portion again and the marking of any outro credits and/or preview of the next book can aid users in knowing how much actual book they have left.
+
+[![Example Excel Table](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/audiobook-chapter-offsets_550.png)](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/audiobook-chapter-offsets.png)
 
 ### 7. Prepare the Timecodes
 
