@@ -151,7 +151,7 @@ mp4chaps -i /path/to/merged.m4b
 
 b) Put the `chapters.txt` file into source folder with the other text files and your master files and re-run your command from Step 5, performing a clean export all over again - this time with chapter data. The benefit here is that you can then zip up and archive the whole source folder for this book and know that you can use it again with this tool in future with no further fiddling needed should you ever need the data.
 
-## 8. Other notes
+## Other notes
 
 ### Performance
 
@@ -210,7 +210,7 @@ You shouldn't ever need to set the `--audio-channels` unless you are trying to m
 
 The `--audio-profile` setting is used to select presets for extremely low bit rate/small files. Ubuntu users: this largely ends up being unplayable on a lot of players unless the fdkaac encoder is used.
 
-The `--adjust-for-ipod` setting should likewise be ignored in most scenarios. Old school iPods have a problem playing files which are too long/large and 
+The `--adjust-for-ipod` setting should likewise be ignored in most scenarios. Old school iPods have a problem playing files which are too long/large. This works around that problem by lowering the quality as far as possible in order to make the file playable.
 
 #### Pay Attention
 
@@ -219,6 +219,16 @@ The `--adjust-for-ipod` setting should likewise be ignored in most scenarios. Ol
 --audio-samplerate[=AUDIO-SAMPLERATE]      audio samplerate, e.g. 22050, 44100, ... [default: ""]
 --audio-codec[=AUDIO-CODEC]                audio codec, e.g. libmp3lame, aac, ... [default: ""]
 ```
+
+The bitrate, samplerate and codec settings should be set carefully and the bitrate and samplerate should, where possible, be set to match your source file to maintain maximum possible quality. For best quality the audio codec should be set to use fdk-aac as previously mentioned.
+
+```Text
+--no-conversion                            skip conversion (destination file uses same encoding as source - all encoding specific options will be ignored)
+```
+
+This parameter is a *flag*, also known as a *switch*. A **flag** or **switch** means that no `="whatever"` value is required, the presence or absence of this in a command is itself a setting.
+
+This flag  should be used when your source files are already in the correct codec (here AAC) and/or the file has already been merged together and you simply need to add/change some metadata such as the description or some chapter offsets.
 
 ### Full Command Reference
 
