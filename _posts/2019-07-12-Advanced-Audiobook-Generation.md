@@ -126,7 +126,7 @@ When selecting the time signature for a chapter marker, wherever possible try to
 
 [![Scrub for Precise Time Signature](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/scrub-for-precise-time-signature_550.png)](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/scrub-for-precise-time-signature.png)
 
-I find it easiest to keep track of the timecodes and chapters in a spreadsheet as shown below. As you can see I've added an "intro" and "outro" section, these really help listeners to do things like skip back to the start of chapter 1 without having to listen to the "opening credits" portion again and the marking of any outro credits and/or preview of the next book can aid users in knowing how much actual book they have left.
+I find it easiest to keep track of the timecodes and chapters in a spreadsheet as shown below (obviously adding a column for the fractional seconds). As you can see I've added an "intro" and "outro" section, these really help listeners to do things like skip back to the start of chapter 1 without having to listen to the "opening credits" portion again and the marking of any outro credits and/or preview of the next book can aid users in knowing how much actual book they have left.
 
 [![Example Excel Table](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/audiobook-chapter-offsets_550.png)](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/audiobook-chapter-offsets.png)
 
