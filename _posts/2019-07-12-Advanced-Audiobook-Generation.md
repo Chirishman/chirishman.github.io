@@ -8,13 +8,13 @@ tags: [
     HowTo,
     Stubborness
 ]
-modified: 2019-07-12 11:06:00
-date: 2019-07-12 12:30:00
+modified: 2019-07-12 21:33:00
+date: 2019-07-12 21:40:00
 comments: true
 image:
   feature: banner.jpg
   thumb: /postthumbs/2019-07-12-Advanced-Audiobook-Generation.svg
-published: false
+published: true
 ---
 {% include _toc.html %}
 
