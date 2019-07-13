@@ -81,11 +81,13 @@ m4b-tool --version
 
 ### 1. Organize the files
 
-Put them all in a folder with the book title for a name. Make sure they sort in the correct order (add padding zeroes if necessary)
+Put your source audio file(s) all into a folder and use the book title as the name for that folder. Keep track of where this is as you will need this full path later and will be adding new files which you create to this location. Make sure that all files sort in the correct order (add padding zeroes to the front of any track numbers if necessary so that "ABCD 20" does not preceeed "ABCD 3" when sorted by name).
 
 ### 2. Find the Chapter Names/Count of Chapters
 
 There are a few websites that list chapter names and your best source will vary. I've had great luck recently with [Type40 Books](http://www.type40.com/Books/index.asp)
+
+[![Example Chapter List](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/Lord-Fouls-Bane-Chapters.png)](http://type40.com/books/bChapters.asp?ID=19)
 
 Fan wikis for a given series can also be a good source of chapter names, though often a bit more digital legwork is involved. Obviously if you have a physical or ebook copy of the book in question you can use the Table of Contents and sometimes you can get lucky and the pages included in Amazon's "Look Inside" feature will include a ToC as well.
 
