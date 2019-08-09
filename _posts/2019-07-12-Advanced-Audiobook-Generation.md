@@ -6,7 +6,7 @@ tags: [
     Audiobooks,
     OpenSource,
     HowTo,
-    Stubborness
+    Stubbornness
 ]
 modified: 2019-07-12 21:33:00
 date: 2019-07-12 21:40:00
@@ -81,7 +81,7 @@ m4b-tool --version
 
 ### 1. Organize the files
 
-Put your source audio file(s) all into a folder and use the book title as the name for that folder. Keep track of where this is as you will need this full path later and will be adding new files which you create to this location. Make sure that all files sort in the correct order (add padding zeroes to the front of any track numbers if necessary so that "ABCD 20" does not preceeed "ABCD 3" when sorted by name).
+Put your source audio file(s) all into a folder and use the book title as the name for that folder. Keep track of where this is as you will need this full path later and will be adding new files which you create to this location. Make sure that all files sort in the correct order (add padding zeroes to the front of any track numbers if necessary so that "ABCD 20" does not precede "ABCD 3" when sorted by name).
 
 ### 2. Find the Chapter Names/Count of Chapters
 
@@ -121,7 +121,6 @@ This is the most time consuming part. Open the merged audio file (Recommended: U
 
 [![Identify Chapters](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/identify-chapters_550.png)](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/identify-chapters.png)
 
-
 When selecting the time signature for a chapter marker, wherever possible try to put it at least a few milliseconds and up to maybe half a second into the silence before the reading of the chapter heading begins. Obviously this will vary depending on how generous the chapter pauses are.
 
 [![Scrub for Precise Time Signature](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/scrub-for-precise-time-signature_550.png)](/images/articleresources/2019-07-12-Advanced-Audiobook-Generation/scrub-for-precise-time-signature.png)
@@ -134,7 +133,7 @@ I find it easiest to keep track of the timecodes and chapters in a spreadsheet a
 
 Once the timecodes have been collected they need to be saved to a new text file named `chapters.txt` formatted like so:
 
-```
+```Text
 00:00:00.000 Intro
 00:04:19.153 This is
 00:09:24.078 A way to add
