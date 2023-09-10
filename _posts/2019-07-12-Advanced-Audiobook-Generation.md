@@ -5,6 +5,8 @@ excerpt: "Authoring Richly Formatted Audiobooks"
 tags: [
     Audiobooks,
     OpenSource,
+    Literature,
+    Reading,
     HowTo,
     Stubbornness
 ]
