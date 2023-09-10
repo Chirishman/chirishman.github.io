@@ -10,7 +10,7 @@ tags: [
     Apps,
     Copyright
 ]
-modified: 2023-09-10 04:06:00
+modified: 2023-09-10 05:13:00
 date: 2023-09-09 03:06:00
 comments: true
 image:
@@ -86,13 +86,13 @@ Of the three remaining, two cannot be pointed at any OPDS library feed other tha
 
 #### DITA Reader
 
-This one is hilarious. According to the description this is supposed to be a normal ebook reader for anyone to use. In reality this app is published for an audience of 1, mister Aferdita Muriqui himself (he put his personal gmail and full name in for the support email on the Google Play app store)
+This one is hilarious. According to the description this is supposed to be a normal ebook reader for anyone to use. In reality this app is published for an audience of 1, Aferdita Muriqui themself (they put their personal gmail and full name in for the support email on the Google Play app store)
 
 ##### General Reading Experience and OPDS Support
 
 - ❌ Does not support manually adding books/the Open With command cannot be used to open a book using it
 - ❌ Can't be pointed at my own book feed, only supports baked-in OPDS feeds
-- ❌ Has a hardcoded OPDS mapping for "Aferdita's Collection" which includes several books which I'm pretty certain he does not have a license to legally redistribute. I have reached out to notify the authors.
+- ❌ Has a hardcoded OPDS mapping for "Aferdita's Collection" which includes several books which I'm pretty certain they do not have a license to legally redistribute. I have reached out to notify the authors.
 - ❌ Does not support YOUR PHONE'S OS being in dark mode. Not just that the app doesn't have it's own dark mode, if your PHONE is in dark mode then the **whole app** is white text on a white background.
 - ❌ If you click the "My Books" navigation at the bottom it doesn't say "My Books" at the top of the page it takes you to, it says "Aferdita's books"
 
@@ -140,7 +140,7 @@ Text to Speech is *almost* there.
 - ✅ Uses iOS built in engine (and thus reflects pronunciation fixes made in the main OS settings menu)
 - ❌ No buttons to skip back or forward
 - ✅ Does support pause-resume
-- ✅ Can highlight a point in the page and have it start reading from where you selected (like you can in Kybook/NaturalReader/VoiceDream)
+- ✅ Can highlight a point in the page and have it start reading from where you selected (like you can in Kybook)
 - ❌ Unfortunately has the same problem as **Aldiko Next** of seemingly having a hard coded pause duration between sentences that does not adjust along with the speaking/playback rate. Not _quite_ as bad as it is in **Aldiko Next** but I'm definitely not switching from Kybook 3 to this unless I have no other choice. If you listen at 1-1.5x speed you might be fine.
 
 Unfortunately I'm the kind of lunatic that listens to audiobooks and podcasts at 3.5 speeds and tts at whatever max speed the settings will suffer. I know I'm kind of an edge case.
@@ -159,6 +159,67 @@ Unfortunately I'm the kind of lunatic that listens to audiobooks and podcasts at
 - ❌ No OPDS support
 - ❌ Claims to support EPUB, various formats, **actually converts all ingested files into flat PDFs with no navigation/TOC.**
   - No ability to fast navigate in a book at all, forces you to *scroll* to page 270 etc. It also crashes if you scroll too fast.
+
+#### NaturalReader
+- ✅ Excellent TTS
+- ❌ No OPDS Support
+- ❌ Now appears to be Subscription Only and charges by amount of minutes of playback
+
+#### VoiceDream
+
+I daily drove this for several years. It was what I used regularly before I switched to Kybook.
+##### General Reading Experience and OPDS Support
+
+- ✅ Has an Apple Watch companion app! I can listen on the go!
+- ❌ No OPDS Support
+  - ✅ Does support mapping web pages as library so I can use it with the web UI version of my COPS feed
+- ❌ *Very* weak organization of books with no ability to tag, sort, or browse books already on your phone by series or author etc.
+- ✅ Full support for skipping around, chapters etc (like a normal ebook reader)
+##### TTS
+- ✅ Absolutely stellar TTS
+- ✅ Supports OS native TTS engine
+- ✅ Also has it's own TTS engine which is built on excellent Acapela voice suite
+  - ✅ Has pronunciation tuning support for that engine
+- ✅ Gives you time estimates of total and remaining playtime when listening to a book like an actual audiobook would
+- ✅ Support for skipping backward and forward
+  - ✅ Configurable forward/backward skip increments (15/30/60 seconds or by sentence or paragraph)
+- ✅ **Manual setting for duration of pauses between sentences and a separate one for pause duration after paragraphs**
+- ✅ Ability to autoplay into the next book or document in your To Be Read list
+- ✅ Sleep timer
+
+#### Kybook 3
+
+The reigning champion.
+
+##### General Reading Experience and OPDS Support
+
+- ✅ Full OPDS book feed support
+- ✅ Full support for skipping around, chapters etc (like a normal ebook reader)
+- ✅ Support for audiobook files
+- ✅ Support for comics, including seamless vertically scrolling webtoon style comics
+- ✅ Full customization of the app's home screen with the ability to hide items you don't use, put frequently used OPDS feeds and subcategories of feeds (like the Recently Added category) directly on the app's New Tab home screen ([screencap](https://github.com/mikespub-org/seblucas-cops/assets/7658840/69028996-77b0-417b-a4d7-2cccad1ef9a9))
+- ✅ Tab-based reading and browsing experience, makes it very easy to quickly switch between books you are currently reading.
+- ✅ Theming support with various Dark Mode options
+- ✅ Robust if slightly confused organization options
+  - ✅ Can sort books into folders
+  - ✅ Can browse books by the metadata tags on the files themselves
+  - ✅ Can apply a different type of organizational tags with colorful icons for sorting
+    - ❌ Annoyingly you cannot search or browse by multiple of these one time time to say, display all of the books you've marked as `Webfiction` and `Updated` you have to get the results for one and then visually look for the icon for the other desired tag
+  - ✅ Can categorize books (this acts like shelves)
+    - ❌ Frustratingly you cannot bulk-categorize items the way you can bulk apply all other organization options
+- ✅ Support for Syncing between devices - if you have your books saved to a folder that syncs between your iOS devices 
+  - ❌ Only your reading progress/percentage is synced, your organizational and any visual tags you have added for at-a-glance completion status tracking *does not sync*
+- ❌ Attempts to check your clipboard for ebook files every time it opens. With modern iOS security settings this means every time you open/close/switch to the app you get a security prompt asking you if you want to allow this.
+
+##### TTS
+- ✅ Supports OS native TTS engine
+  - ✅ This means full support for the iOS accessability settings pronunciation customization
+- ✅ Support for skipping backward and forward
+- ✅ No jarring pauses between sentences or paragraphs
+- ✅ You can highlight a point in the page and have it start reading the point you selected
+- ❌ No sleep timer
+
+
 
 ## Conclusions
 
