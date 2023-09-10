@@ -15,7 +15,7 @@ date: 2023-09-10 03:06:00
 comments: true
 image:
   feature: banner.jpg
-  thumb: /qpostthumbs/2023-09-09-iOS-eBook-Reader-Apps.svg
+  thumb: /postthumbs/2023-09-09-iOS-eBook-Reader-Apps.svg
 published: true
 ---
 {% include _toc.html %}
