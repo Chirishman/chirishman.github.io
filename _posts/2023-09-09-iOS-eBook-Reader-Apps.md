@@ -16,7 +16,7 @@ comments: true
 image:
   feature: banner.jpg
   thumb: /quicktips/postthumb.png
-published: false
+published: true
 ---
 {% include _toc.html %}
 
@@ -160,4 +160,4 @@ I hope that the Readium landscape improves, it does seem like an awesome framewo
 
 We are all poorer for Amazon's market dominance. It has set the whole world back a full decade in both eink display development and ereading applications not locked to a specific book marketplace.
 
-Overall if the author of Kybook had a patreon to support continued development for Kybook I would fund it.
+Overall if the author of Kybook had a patreon to support continued development for Kybook I would fund it. If anyone else has any app suggestions for me please let me know and I'll test them out!
