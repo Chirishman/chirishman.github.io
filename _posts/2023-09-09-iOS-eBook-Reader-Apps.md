@@ -10,12 +10,12 @@ tags: [
     Apps,
     Copyright
 ]
-modified: 2023-09-09 11:06:00
-date: 2023-09-09 11:06:00
+modified: 2023-09-10 04:06:00
+date: 2023-09-10 03:06:00
 comments: true
 image:
   feature: banner.jpg
-  thumb: /quicktips/postthumb.png
+  thumb: /qpostthumbs/2023-09-09-iOS-eBook-Reader-Apps.svg
 published: true
 ---
 {% include _toc.html %}
