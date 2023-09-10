@@ -126,6 +126,7 @@ I honestly hadn't looked at this before purely because the icon and name were bo
 
 Overall this seems pretty OK!
 
+- ✅ OPDS Feed Support! I can point it at my own feed!
 - ❌ I don't like being asked for push notification permissions and if I'd like "special offers" right away when I first open the app, that's not a good tone-setter.
 - ❌ Fiddling with it a bit more think if I daily-drove it I'd get really annoyed that the OPDS feeds are kind of buried several interactions deep. They're not on the home screen and you have to go to books and then, because it's wrapped off the side of the screen, you have to swipe all the way to the right past a bunch of icons I'll never use for Dropbox and Google Drive, and _then_ select the OPDS library you actually want once you're in it.
   - If you could reorder the list so OPDS comes first or hide icons you don't want I could live with it but it would still be a massive quality of life setback from Kybook which lets you pin both OPDS libraries and even *shortcuts* to specific points in the library to your home screen.
