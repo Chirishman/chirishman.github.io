@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS eBook Reader Apps"
-excerpt: "A somewhat exhaustive (and very opinionated) look at eBook reading solutions for iOS ignited by the question `"Why are all of the best eBook reader apps for iOS abandonware?`""
+excerpt: "A somewhat exhaustive (and very opinionated) look at eBook reading solutions for iOS ignited by the question: Why are all of the best eBook reader apps for iOS abandonware?"
 tags: [
     eBooks,
     Literature,
