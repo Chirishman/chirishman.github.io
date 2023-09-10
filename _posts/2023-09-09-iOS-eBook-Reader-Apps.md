@@ -89,10 +89,11 @@ Of the three remaining, two cannot be pointed at any OPDS library feed other tha
 This one is hilarious. According to the description this is supposed to be a normal ebook reader for anyone to use. In reality this app is published for an audience of 1, mister Aferdita Muriqui himself (he put his personal gmail and full name in for the support email on the Google Play app store)
 
 ##### General Reading Experience and OPDS Support
+
 - ❌ Does not support manually adding books/the Open With command cannot be used to open a book using it
 - ❌ Can't be pointed at my own book feed, only supports baked-in OPDS feeds
 - ❌ Has a hardcoded OPDS mapping for "Aferdita's Collection" which includes several books which I'm pretty certain he does not have a license to legally redistribute. I have reached out to notify the authors.
-- ❌ Does not suport YOUR PHONE'S OS being in dark mode. Not just that the app doesn't have it's own dark mode, if your PHONE is in dark mode then the **whole app** is white text on a white background.
+- ❌ Does not support YOUR PHONE'S OS being in dark mode. Not just that the app doesn't have it's own dark mode, if your PHONE is in dark mode then the **whole app** is white text on a white background.
 - ❌ If you click the "My Books" navigation at the bottom it doesn't say "My Books" at the top of the page it takes you to, it says "Aferdita's books"
 
 This one is clownshoes
@@ -101,20 +102,25 @@ This one is clownshoes
 
 I've actually looked at this one a few years ago and liked it except for the TTS. That hasn't gotten much better.
 
+##### General Reading Experience and OPDS Support
+
 - ✅ This is the only one of these that's actually competent!
 - ✅ You can actually point it at your own OPDS feeds or any OPDS feed you want!
+- ❌ This is a small quality of life thing but it doesn't support bulk downloading from OPDS feeds which Kybook 3 does.
 - ✅ If you don't care about/use TTS stop reading here! You've found your new ebook reader app!
+
+##### TTS
+
 - ✅ TTS uses the iOS native TTS engine and respects your global pronuciation settings which is great!
 - ✅ TTS can be paused and resumed! You can skip back and forward a sentence if you missed something!
 - ❌ Unfortunately whenever you begin TTS it will **only start at the beginning of a chapter** and you can **only skip ahead one sentence at a time**. If you had been near the end of a chapter when you closed the app RIP you.
 - ❌ It pauses for a really long time, somewhere between 1.5 and 2 full seconds after every sentence *no matter what playback speed you have the TTS set to*. Unlistenable, especially if you listen at high speeds.
-- ❌ This is a small quality of life thing but it doesn't support bulk downloading from OPDS feeds which Kybook 3 does.
 
 ### Non-Readium Based Apps
 
 #### PocketBook Reader
 
-I honestly hadn't looked at this beore purely because the icon and name were both similar to an very bad app that I tried a long time ago on a Windows RT Surface tablet but looking at them more closely I don't think there's any connection.
+I honestly hadn't looked at this before purely because the icon and name were both similar to an very bad app that I tried a long time ago on a Windows RT Surface tablet but looking at them more closely I don't think there's any connection.
 
 ##### General Reading Experience and OPDS Support
 
@@ -147,12 +153,11 @@ Unfortunately I'm the kind of lunatic that listens to audiobooks and podcasts at
 
 #### Speechify
 - ✅ AI TTS Voices are legitimately impressive! At least what I can sample of them without paying seems to be.
-- ❌ Free version **using the iOS native TTS engine** demands that you pay them **$140/year billed annualy** to increase the speed above 1.1x
+- ❌ Free version **using the iOS native TTS engine** demands that you pay them **$140/year billed annually** to increase the speed above 1.1x
   - You get other things like the premium AI voices for that price but paywalling access to functionality made up entirely of the phone's native OS accessibility features is a scumbag move.
 - ❌ No OPDS support
 - ❌ Claims to support EPUB, various formats, **actually converts all ingested files into flat PDFs with no navigation/TOC.**
-
-
+  - No ability to fast navigate in a book at all, forces you to *scroll* to page 270 etc. It also crashes if you scroll too fast.
 
 ## Conclusions
 
